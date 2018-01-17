@@ -91,12 +91,12 @@ class TicTacToe
     end 
   end 
 
+
+  def over?
+    won? || draw? || full? ? true : false 
+  end 
+
 =begin
-def over?(board)
-  won?(board) || draw?(board) || full?(board) ? true : false 
-
-end 
-
 def winner(board) 
    if won?(board) != nil 
      board[won?(board)[0]]
