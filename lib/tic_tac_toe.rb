@@ -41,11 +41,10 @@ class TicTacToe
 
   def turn
     puts "Please enter 1-9:"
-    input = gets.chomp
-    input_to_index(input)
+    input = input_to_index(gets.chomp)
     current_player
     
-    if valid_move?()
+    if valid_move?(input)
       move
       display_board
     #else 
