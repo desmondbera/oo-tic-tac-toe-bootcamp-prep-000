@@ -15,16 +15,17 @@ class TicTacToe
   end 
   
 
-def input_to_index(user_input)
-  user_input.to_i - 1 
-end 
+  def input_to_index(user_input)
+    user_input.to_i - 1 
+  end 
+
+
+
+  def move(@board, indx, player)
+    @board[indx] = player
+  end 
 
 =begin
-
-def move(board, indx, player)
-  board[indx] = player
-end 
-
 def valid_move?(board, indx)
   if position_taken?(board, indx)
     false
