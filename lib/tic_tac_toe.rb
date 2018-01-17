@@ -96,13 +96,14 @@ class TicTacToe
     won? || draw? || full? ? true : false 
   end 
 
-=begin
-def winner(board) 
-   if won?(board) != nil 
-     board[won?(board)[0]]
-   end 
-end 
 
+  def winner(board) 
+     if won?(board) != nil 
+       board[won?(board)[0]]
+     end 
+  end 
+
+=begin
 def play(board)
   until over?(board)
     turn(board)
