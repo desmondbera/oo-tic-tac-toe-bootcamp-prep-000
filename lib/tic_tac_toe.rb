@@ -65,7 +65,7 @@ class TicTacToe
     count 
   end 
 
-=begin 
+
 def current_player(board)
   if turn_count(board) % 2 == 0 
     return "X"
@@ -74,6 +74,7 @@ def current_player(board)
   end 
 end
 
+=begin 
 def won?(board)
   
   WIN_COMBINATIONS.find do |position|
