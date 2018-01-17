@@ -45,7 +45,7 @@ class TicTacToe
     current_player
     
     if valid_move?(input)
-      move
+      move(indx, )
       display_board
     #else 
      # turn
