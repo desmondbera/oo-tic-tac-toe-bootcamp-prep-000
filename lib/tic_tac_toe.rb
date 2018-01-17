@@ -72,7 +72,7 @@ def current_player
   end 
 end
 
-=begin 
+ 
 def won?(board)
   
   WIN_COMBINATIONS.find do |position|
@@ -80,6 +80,7 @@ def won?(board)
     end 
 end 
 
+=begin
 def full?(board)
    board.all? { |x| x != " " || x == nil  }
 end 
