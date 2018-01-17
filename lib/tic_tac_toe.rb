@@ -80,11 +80,11 @@ def won?
     end 
 end 
 
-=begin
-def full?(board)
+def full?
    board.all? { |x| x != " " || x == nil  }
 end 
 
+=begin
 def draw?(board)
   
   if won?(board) == nil && full?(board) == true 
