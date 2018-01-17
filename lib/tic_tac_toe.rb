@@ -64,17 +64,16 @@ class TicTacToe
   end 
 
 
-def current_player
-  if turn_count % 2 == 0 
-    return "X"
-  else 
-    return "O"
-  end 
-end
+  def current_player
+    if turn_count % 2 == 0 
+      return "X"
+    else 
+      return "O"
+    end 
+  end
 
  
   def won?
-    
     WIN_COMBINATIONS.find do |position|
       @board[position[0]] == @board[position[1]] && @board[position[1]] == @board[position[2]] && position_taken?(position[0])
       end 
@@ -84,14 +83,14 @@ end
      @board.all? { |x| x != " " || x == nil  }
   end 
 
-def draw?(board)
-  
-  if won?(board) == nil && full?(board) == true 
-    true 
-  else 
-    false 
+  def draw?(board)
+    
+    if won?(board) == nil && full?(board) == true 
+      true 
+    else 
+      false 
+    end 
   end 
-end 
 
 =begin
 def over?(board)
