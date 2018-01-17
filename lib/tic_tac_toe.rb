@@ -29,7 +29,7 @@ class TicTacToe
 
 
 def valid_move?(indx)
-  if position_taken?(@board, indx)
+  if position_taken?(indx)
     false
   elsif indx < 0 || indx > 8 
     false
