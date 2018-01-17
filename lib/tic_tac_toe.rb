@@ -27,7 +27,7 @@ class TicTacToe
    !(@board[index].nil? || @board[index] == " ")
   end
 
-=begin
+
 def valid_move?(board, indx)
   if position_taken?(board, indx)
     false
@@ -38,6 +38,7 @@ def valid_move?(board, indx)
   end 
 end 
 
+=begin
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.chomp
