@@ -83,9 +83,8 @@ class TicTacToe
      @board.all? { |x| x != " " || x == nil  }
   end 
 
-  def draw?(board)
-    
-    if won?(board) == nil && full?(board) == true 
+  def draw?
+    if won? == nil && full? == true 
       true 
     else 
       false 
