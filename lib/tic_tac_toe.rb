@@ -38,8 +38,8 @@ def valid_move?(indx)
   end 
 end 
 
-=begin
-def turn(board)
+
+def turn
   puts "Please enter 1-9:"
   input = gets.chomp
   input_indx = input_to_index(input)
@@ -52,6 +52,8 @@ def turn(board)
     turn(board)
   end
 end 
+
+=begin
 
 def turn_count(board)
   count = 0 
