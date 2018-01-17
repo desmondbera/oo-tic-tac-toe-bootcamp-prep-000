@@ -73,10 +73,10 @@ def current_player
 end
 
  
-def won?(board)
+def won?
   
   WIN_COMBINATIONS.find do |position|
-    board[position[0]] == board[position[1]] && board[position[1]] == board[position[2]] && position_taken?(board, position[0])
+    @board[position[0]] == @board[position[1]] && @board[position[1]] == @board[position[2]] && position_taken?(position[0])
     end 
 end 
 
