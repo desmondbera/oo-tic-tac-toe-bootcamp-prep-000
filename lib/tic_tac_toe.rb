@@ -81,7 +81,7 @@ def won?
 end 
 
 def full?
-   board.all? { |x| x != " " || x == nil  }
+   @board.all? { |x| x != " " || x == nil  }
 end 
 
 =begin
