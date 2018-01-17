@@ -73,18 +73,17 @@ def current_player
 end
 
  
-def won?
-  
-  WIN_COMBINATIONS.find do |position|
-    @board[position[0]] == @board[position[1]] && @board[position[1]] == @board[position[2]] && position_taken?(position[0])
-    end 
-end 
+  def won?
+    
+    WIN_COMBINATIONS.find do |position|
+      @board[position[0]] == @board[position[1]] && @board[position[1]] == @board[position[2]] && position_taken?(position[0])
+      end 
+  end 
 
-def full?
-   @board.all? { |x| x != " " || x == nil  }
-end 
+  def full?
+     @board.all? { |x| x != " " || x == nil  }
+  end 
 
-=begin
 def draw?(board)
   
   if won?(board) == nil && full?(board) == true 
@@ -94,6 +93,7 @@ def draw?(board)
   end 
 end 
 
+=begin
 def over?(board)
   won?(board) || draw?(board) || full?(board) ? true : false 
 
