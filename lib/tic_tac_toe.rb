@@ -39,19 +39,19 @@ def valid_move?(indx)
 end 
 
 
-def turn
-  puts "Please enter 1-9:"
-  input = gets.chomp
-  input_indx = input_to_index(input)
-  your_turn = current_player(board)
-  
-  if valid_move?(board, input_indx)
-    move(board, input_indx, your_turn)
-    display_board(board)
-  else 
-    turn(board)
-  end
-end 
+  def turn
+    puts "Please enter 1-9:"
+    input = gets.chomp
+    input_indx = input_to_index(input)
+    your_turn = current_player(board)
+    
+    if valid_move?(board, input_indx)
+      move(board, input_indx, your_turn)
+      display_board(board)
+    else 
+      turn(board)
+    end
+  end 
 
 =begin
 
