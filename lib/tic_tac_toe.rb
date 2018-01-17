@@ -28,15 +28,15 @@ class TicTacToe
   end
 
 
-def valid_move?(indx)
-  if position_taken?(indx)
-    false
-  elsif indx < 0 || indx > 8 
-    false
-  else 
-    true 
+  def valid_move?(indx)
+    if position_taken?(indx)
+      false
+    elsif indx < 0 || indx > 8 
+      false
+    else 
+      true 
+    end 
   end 
-end 
 
 
   def turn
@@ -45,11 +45,11 @@ end
     input_indx = input_to_index(input)
     your_turn = current_player(board)
     
-    if valid_move?(board, input_indx)
-      move(board, input_indx, your_turn)
-      display_board(board)
+    if valid_move?(input_indx)
+      move(input_indx, your_turn)
+      display_board
     else 
-      turn(board)
+      turn
     end
   end 
 
